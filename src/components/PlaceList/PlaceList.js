@@ -11,7 +11,7 @@ const placeList = props => {
        <ListItem 
        placeImage={info.item.image}
         placeName={info.item.name} 
-        onItemPressed={()=>props.onItemDeleted(info.item.key)} />)} />   
+        onItemPressed={()=>props.onItemSelected(info.item.key)} />)} />   
     );
 }; 
 const styles = StyleSheet.create({

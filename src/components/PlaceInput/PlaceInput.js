@@ -4,7 +4,12 @@ import {View,TextInput,StyleSheet,Button} from 'react-native';
 export default class PlaceInput extends Component {
     state = {
         placeName:""
+      };
+
+      componentDidMount(){
+
       }
+      
       placeNameChangedHandler = val =>{
         this.setState({
           placeName:val
@@ -24,9 +29,7 @@ export default class PlaceInput extends Component {
          placeholder="An awasome place"
           onChangeText={this.placeNameChangedHandler}  />
           <Button title="ADD" style={styles.placeButton} 
-            onPress={this.placeSubmitHandler}
-        //    onPress={() => this.onPlaceAdded(this.state.placeName)}
-          />
+            onPress={this.placeSubmitHandler} />
         </View>
     )
   }
